@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import SearchHeader from '../components/SearchHeader'
 
 import CharBadge from '../components/charBadge'
 import NavFooter from '../components/NavFooter'
@@ -50,15 +51,14 @@ fetchCharacters = async () => {
       }
     return (
         <React.Fragment>
-            <main>
-                <section className="main__content">
+            <SearchHeader />
+                <section className="searched__content">
                     {this.state.data.results.map(character => (
                         <div className="fillList" key={character.id}>
                             <CharBadge character={character} />
                         </div>
                         ))}
                 </section>
-            </main>
             {this.state.loading &&
             (
                 <div>Hola</div>

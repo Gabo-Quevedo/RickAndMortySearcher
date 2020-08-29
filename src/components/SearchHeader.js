@@ -5,7 +5,7 @@ import mobileLogo from '../images/Rick and Morty.png'
 
 import { Link } from 'react-router-dom'
 
-class header extends React.Component{
+class SearchHeader extends React.Component{
     render(){
         return (
         <header>
@@ -26,4 +26,4 @@ class header extends React.Component{
     }
 }
 
-export default header
+export default SearchHeader

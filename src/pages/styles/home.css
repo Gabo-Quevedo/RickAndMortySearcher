@@ -1,11 +1,9 @@
-main{
-    width: 100%;
+.home__content{
     height: 73vh;
-}
-.main__content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
+
 }
