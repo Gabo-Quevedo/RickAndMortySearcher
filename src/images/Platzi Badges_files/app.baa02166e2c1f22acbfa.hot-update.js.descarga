@@ -1,0 +1,15 @@
+webpackHotUpdate("app",{
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/components/styles/global.css":
+/*!********************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/components/styles/global.css ***!
+  \********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \" :root{\\r\\n    --back--color: #202020;\\r\\n    --back--header: #101010;\\r\\n    --badge--gradiant: linear-gradient(#1E1E1E, #131313);\\r\\n    --font--writting:'Permanent Marker', cursive;\\r\\n    --font--neutral: -apple-system, BlinkMacSystemFont, \\r\\n    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, \\r\\n    'Open Sans', 'Helvetica Neue', sans-serif;\\r\\n} \\r\\n*{\\r\\n    box-sizing: border-box;\\r\\n    padding: 0;\\r\\n    margin: 0;\\r\\n}\\r\\n.searched__content, .home__content {\\r\\n    padding-top:27vh;\\r\\n    height: 73vh;\\r\\n}\\r\\n#app{\\r\\n    height: 100vh;\\r\\n}\\r\\nhtml{\\r\\n    font-size: 62.5%;\\r\\n}\\r\\nbody{\\r\\n    background-color: var(--back--color);\\r\\n}\\r\\n\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./src/components/styles/global.css?./node_modules/css-loader/dist/cjs.js");
+
+/***/ })
+
+})
