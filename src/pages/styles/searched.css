@@ -1,7 +1,6 @@
 
 .fillList{
-    background:red;
-    background: linear-gradient(#1E1E1E, #131313);
+    background: var(--badge--gradiant);
     height: 13vh;
     margin-bottom: 3px;
 }

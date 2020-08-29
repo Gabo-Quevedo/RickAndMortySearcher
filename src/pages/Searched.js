@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+
 import CharBadge from '../components/charBadge'
+import NavFooter from '../components/NavFooter'
 
 
 
@@ -35,6 +37,7 @@ fetchCharacters = async () => {
                 </section>
                 ))}
             </main>
+            <NavFooter/>
       </React.Fragment>
     );
   }
