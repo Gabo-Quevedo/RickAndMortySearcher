@@ -1,7 +1,6 @@
 import React from 'react'
 
-import PrevNav from '../images/Prev.svg'
-import NextvNav from '../images/Next.svg'
+import More from '../images/More.svg'
 
 import './styles/navFooter.css'
 
@@ -12,12 +11,9 @@ class NavFooter extends React.Component{
         return (
         <footer>
             <div className="navFooter_container">
-                <Link to="#" className="navFooter_container-prevBtn">
-                    <img src={PrevNav} alt="Cargar lista Previa de Personajes"/>
-                </Link>
-                <Link to="#" className="navFooter_container-nextBtn">
-                    <img src={NextvNav} alt="Cargar lista Previa de Personajes"/>
-                </Link>
+                <div to="#" className="navFooter_container-prevBtn">
+                    <img onClick={this.props.more} src={More} alt="Cargar lista Previa de Personajes"/>
+                </div>
             </div>
         </footer>
         )

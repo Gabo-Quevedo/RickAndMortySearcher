@@ -18,7 +18,7 @@ class header extends React.Component{
                     <label className="form__label" htmlFor="form__label-searcher">
                         <input placeholder="Search..." className="form__label-searcher" id="form__label-searcher" type="text"/>
                     </label>
-                <Link className="show" to="#">Show more...</Link>
+                <Link className="show" to="#">Show all...</Link>
                 </form>
             </div>
         </header>

@@ -7,14 +7,14 @@ class CharBadge extends React.Component{
     
     render(){
         return (
-                <div className="fillList__content">
+                <Link to="#" className="fillList__content">
                 <div className="fillList__content-card">
                     <img src={this.props.character.image} alt="Foto de personaje"/>
                 </div>
                 <div className="fillList_content_nameContent">
                     <label className="fillList_content_nameContent-name">{this.props.character.name}</label>
                 </div>    
-            </div>
+            </Link>
             
         )
     }
