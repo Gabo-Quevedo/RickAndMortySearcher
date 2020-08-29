@@ -59,10 +59,7 @@ fetchCharacters = async () => {
                         </div>
                         ))}
                 </section>
-            {this.state.loading &&
-            (
-                <div>Hola</div>
-            )}
+           
             {!this.state.loading &&
             (
                 <NavFooter more={()=>this.fetchCharacters()}/>
