@@ -35,3 +35,21 @@
 .blue-type{
     background: #1E617A;
 }
+.green-value{
+    background: linear-gradient(to bottom, #349F42 0%,#177721 100%);
+}
+.green-type{
+    background: #1E7A21;
+}
+.yellow-value{
+    background: linear-gradient(to bottom, #D1D622 0%,#7B812B 100%);
+}
+.yellow-type{
+    background: #7A771E;
+}
+.red-value{
+    background: linear-gradient(to bottom, #CC3939 0%,#771717 100%);
+}
+.red-type{
+    background: #7A1E1E;
+}

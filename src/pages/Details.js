@@ -22,7 +22,17 @@ export default class Details extends Component {
           <Attribute 
           valueColor="attributeContainer__value blue-value"
           typeColor="attributeContainer__type blue-type"/>
+          <Attribute 
+          valueColor="attributeContainer__value green-value"
+          typeColor="attributeContainer__type green-type"/>
+          <Attribute 
+          valueColor="attributeContainer__value yellow-value"
+          typeColor="attributeContainer__type yellow-type"/>
+          <Attribute 
+          valueColor="attributeContainer__value red-value"
+          typeColor="attributeContainer__type red-type"/>
         </section>
+        
         </React.Fragment>
     );
   }
