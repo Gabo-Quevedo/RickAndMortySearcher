@@ -1,0 +1,37 @@
+.attributeContainer{
+    height: 20vh;
+    background:red;
+    display: flex;
+    flex-direction: column;
+}
+.attributeContainer__type{
+
+    height: 4vh;
+    height: 4vh;
+}
+
+.attributeContainer__value,.attributeContainer__type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.attributeContainer__value{
+
+    height: 16vh;
+}
+.attributeContainer__type-name{
+    font-family: var(--font--writting);
+    color: var(--font--white);
+    font-size: 1.5rem;
+}
+.attributeContainer__value-name{
+    font-family: var(--font--writting);
+    color: var(--font--white);
+    font-size: 4.5rem;   
+}
+.blue-value{
+    background: linear-gradient(to bottom, rgb(33,110,141) 0%,rgb(23,92,119) 100%);
+}
+.blue-type{
+    background: #1E617A;
+}

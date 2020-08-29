@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Attribute from '../components/Attribute'
 
 import './styles/details.css'
 
@@ -18,6 +19,9 @@ export default class Details extends Component {
             <div className="charPicture-name">Rick Sanchez</div>
             <div className="charPicture-origin">Origin-Earth</div>
           </div>
+          <Attribute 
+          valueColor="attributeContainer__value blue-value"
+          typeColor="attributeContainer__type blue-type"/>
         </section>
         </React.Fragment>
     );

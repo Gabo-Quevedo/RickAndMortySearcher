@@ -19,7 +19,7 @@
     font-family: var(--font--writting);
     font-size: 3.0rem;
     margin: 0 3%;
-    color: rgb(224, 224, 224);
+    color: var(--font--white);
     text-shadow: 2px 2px #1a1a1a;
     position: absolute;
     bottom: 3%;
@@ -28,7 +28,7 @@
     font-family: var(--font--writting);
     font-size: 1.5rem;
     margin: 0 3%;
-    color: rgb(224, 224, 224);
+    color: var(--font--white);
     text-shadow: 2px 2px #1a1a1a;
     position: absolute;
     bottom: 3%;

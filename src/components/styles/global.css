@@ -1,6 +1,7 @@
  :root{
     --back--color: #202020;
     --back--header: #101010;
+    --font--white: rgb(243, 243, 243);
     --badge--gradiant: linear-gradient(#1E1E1E, #131313);
     --font--writting:'Permanent Marker', cursive;
     --font--neutral: -apple-system, BlinkMacSystemFont, 
