@@ -12,20 +12,20 @@ export default class Home extends Component {
   render() {
     return (
       <main className="main">
-        <div className="main__content">
-        <picture>
-          {/* <source media="(min-width:size*pordefinir)" srcset={expresion}/> */}
-          <img src={rickMobile} alt="Logo Rick and Morty API Searcher"/>
-        </picture>
-        <picture>
-          {/* <source media="(min-width:size*pordefinir)" srcset={expresion}/> */}
-          <img src={WALA} alt="Logo Rick and Morty API Searcher"/>
-        </picture>
-        <picture>
-          {/* <source media="(min-width:size*pordefinir)" srcset={expresion}/> */}
-          <img src={portal} alt="Logo Rick and Morty API Searcher"/>
-        </picture>
-        </div>
+        <section className="main__content">
+          <picture>
+            {/* <source media="(min-width:size*pordefinir)" srcset={expresion}/> */}
+            <img src={rickMobile} alt="Logo Rick and Morty API Searcher"/>
+          </picture>
+          <picture>
+            {/* <source media="(min-width:size*pordefinir)" srcset={expresion}/> */}
+            <img src={WALA} alt="Logo Rick and Morty API Searcher"/>
+          </picture>
+          <picture>
+            {/* <source media="(min-width:size*pordefinir)" srcset={expresion}/> */}
+            <img src={portal} alt="Logo Rick and Morty API Searcher"/>
+          </picture>
+        </section>
       </main>
     );
   }

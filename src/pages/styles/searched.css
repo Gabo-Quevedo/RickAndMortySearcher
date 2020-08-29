@@ -1,0 +1,35 @@
+
+.fillList{
+    background:red;
+    height: 13vh;
+}
+.fillList__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.fillList__content-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+.fillList__content-card img{
+    border-radius: 50%;
+    width: 85%;
+}
+.fillList_content_nameContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:  70%;
+}
+.fillList_content_nameContent-name{
+    margin-left:-55px;
+    display: inline-block;
+    font-size: 2.6rem;
+    font-family: var(--font--writting);
+}
