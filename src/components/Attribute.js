@@ -10,14 +10,12 @@ class Attribute extends React.Component{
     render(){
         return (
         <React.Fragment>
-            <div className="attributeContainer">
                 <div className={this.props.typeColor}>
-                    <label className="attributeContainer__type-name">SPECIES</label>
+                    <label className="attributeContainer__type-name">{this.props.contentType}</label>
                 </div>
                 <div className={this.props.valueColor}>
-                 <label className="attributeContainer__value-name">HUMAN</label>
+                 <label className="attributeContainer__value-name">{this.props.contentValue}</label>
                 </div>
-            </div>
         </React.Fragment>   
         )
     }

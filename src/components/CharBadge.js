@@ -7,7 +7,7 @@ class CharBadge extends React.Component{
     
     render(){
         return (
-                <Link to={`/character/details`} className="fillList__content">
+                <Link to={`/character/${this.props.character.id}`} className="fillList__content">
                 <div className="fillList__content-card">
                     <img src={this.props.character.image} alt="Foto de personaje"/>
                 </div>

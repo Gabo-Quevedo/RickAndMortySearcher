@@ -8,6 +8,9 @@
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif;
 } 
+h1{
+    color: white;
+}
 *{
     box-sizing: border-box;
     padding: 0;

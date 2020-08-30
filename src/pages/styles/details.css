@@ -33,4 +33,6 @@
     position: absolute;
     bottom: 3%;
     right: 1%;
+    width: 40%;
+    text-align:right;
 }

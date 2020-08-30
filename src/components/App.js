@@ -11,8 +11,8 @@ function App() {
         <BrowserRouter>
             <Layout>
                 <Switch>
-                    <Route exact path="/" component={Searched} />
-                    <Route exact path="/character/details" component={Details} />
+                    <Route exact path="/" component={Home} />
+                    <Route exact path="/character/:charId" component={Details} />
                     <Route exact path="/searched" component={Searched} />
                 </Switch>
             </Layout>
