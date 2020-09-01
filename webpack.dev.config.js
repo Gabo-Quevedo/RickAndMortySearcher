@@ -1,16 +1,21 @@
-const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const webpack = require('webpack')
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname,'src/index.js'),
+    app: path.resolve(__dirname, 'src/index.jsx'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js',
     publicPath: 'http://localhost:9001/',
-    chunkFilename: 'js/[id].[chunkhash].js'
+    chunkFilename: 'js/[id].[chunkhash].js',
+  },
+  resolve: {
+    extensions: [
+      '.js', '.jsx',
+    ],
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
@@ -21,7 +26,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js|jsx$/,
         use: 'babel-loader',
         exclude: /node_modules/,
       },
@@ -29,8 +34,8 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
-        ]
+          'css-loader',
+        ],
       },
       {
         test: /\.jpg|jpeg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
@@ -38,15 +43,15 @@ module.exports = {
           loader: 'file-loader',
           options: {
             outputPath: 'assets/',
-          }
-        }
+          },
+        },
       },
-    ]
+    ],
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'public/index.html')
+      template: path.resolve(__dirname, 'public/index.html'),
     }),
   ],
-}
+};

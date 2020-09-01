@@ -20,7 +20,7 @@
 }
 .fillList__content-card img{
     border-radius: 50%;
-    width: 80%;
+    height: 80%;
 }
 .fillList_content_nameContent{
     display: flex;
