@@ -13,10 +13,12 @@ function SearchHeader() {
   return (
     <header>
       <div className="header__container">
-        <picture className="header__container__picture">
-          <source media="(min-width:768px)" srcSet={bigLogo} />
-          <img src={mobileLogo} alt="Logo Rick and Morty API Searcher" />
-        </picture>
+        <Link to="/">
+          <picture className="header__container__picture">
+            <source media="(min-width:768px)" srcSet={bigLogo} />
+            <img src={mobileLogo} alt="Logo Rick and Morty API Searcher" />
+          </picture>
+        </Link>
         <form
           key={formKey}
           className="form"

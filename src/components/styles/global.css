@@ -26,7 +26,6 @@ main{
 }
 .searched__content, .home__content {
     padding-top:27vh;
-    height: 73vh;
 }
 #app{
     height: 100vh;

@@ -27,7 +27,7 @@ header{
 }
 .form{
     width: 90%;
-    max-width: 50%;
+    max-width: 40%;
 }
 .form__label-searcher{
     font-size:2.0rem;
@@ -44,9 +44,45 @@ header{
     margin: 7px 0 0 17px;
     display: inline-block;
 }
-
+.home__content picture img{
+    width: 100%;
+}
+.eyeRick{
+    width: 100%;
+}
+.wala{
+    width: 100%;
+}
+.portal{
+    width: 30%;
+}
 @media (min-width: 768px){ 
     .header__container {
         height:37vh;
     }
+    
+.eyeRick{
+    width: 55%;
+}
+.wala{
+    width: 70%;
+}
+.portal{
+    width: 15%;
+}
+ }
+ @media (min-width: 1024px){ 
+    .header__container {
+        height:37vh;
+    }
+    
+.eyeRick{
+    width: 70%;
+}
+.wala{
+    width: 50%;
+}
+.portal{
+    width: 15%;
+}
  }
