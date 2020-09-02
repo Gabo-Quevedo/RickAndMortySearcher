@@ -1,3 +1,8 @@
+.searched__content{
+    max-width: 800px;
+    min-width: 320px;
+    width: 100%;
+}
 .fillList{
     background: var(--badge--gradiant);
     height: 13vh;
@@ -15,19 +20,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 35%;
+    max-width: 115px;
     height: 100%;
 }
 .fillList__content-card img{
     border-radius: 50%;
-    height: 80%;
+    height: 100%;
+    padding: 8px 10px;
 }
 .fillList_content_nameContent{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    width:  70%;
+    width:  85%;
 }
 .fillList_content_nameContent-name{
     margin-left:-30px;

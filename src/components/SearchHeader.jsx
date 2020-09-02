@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import history from '../utility/history';
+import bigLogo from '../images/RickandMorty@2x.png';
 
 import './styles/header.css';
 
@@ -12,8 +13,8 @@ function SearchHeader() {
   return (
     <header>
       <div className="header__container">
-        <picture>
-          {/* <source media="(min-width:size*pordefinir)" srcset={expresion}/> */}
+        <picture className="header__container__picture">
+          <source media="(min-width:768px)" srcSet={bigLogo} />
           <img src={mobileLogo} alt="Logo Rick and Morty API Searcher" />
         </picture>
         <form
