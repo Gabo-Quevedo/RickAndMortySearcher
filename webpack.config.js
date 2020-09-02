@@ -14,7 +14,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].[hash].js',
-    publicPath: './',
+    publicPath: '/',
     chunkFilename: 'js/[id].[chunkhash].js',
   },
   resolve: {
@@ -51,7 +51,7 @@ module.exports = {
           options: {
             limit: 1000,
             name: '[hash].[ext]',
-            outputPath: 'assets',
+            outputPath: './assets',
           },
         },
       },

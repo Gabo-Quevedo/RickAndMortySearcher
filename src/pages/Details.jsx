@@ -53,7 +53,6 @@ export default class Details extends Component {
     return (
       <>
         <section className="details__content">
-          <div className="details__content-beName">{data.name}</div>
           <div className="charPicture">
             <img className="charPicture-img" src={data.image} alt="" />
             <div className="charPicture-shadow" />

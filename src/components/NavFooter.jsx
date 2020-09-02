@@ -1,6 +1,6 @@
 import React from 'react';
 
-import More from '../images/More.svg';
+import More from '../images/more.png';
 
 import './styles/navFooter.css';
 

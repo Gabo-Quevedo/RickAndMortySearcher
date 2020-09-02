@@ -75,10 +75,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        max-width: 768px;
+        max-width:1024px;
     }
 .attributeComponent{
-    max-width: 384px;
+    max-width: 50%;
     width: 100%;
 }
 }
