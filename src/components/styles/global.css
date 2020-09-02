@@ -19,6 +19,8 @@ h1{
 main{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 .searched__content, .home__content {
     padding-top:27vh;
