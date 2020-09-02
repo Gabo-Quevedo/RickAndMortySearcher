@@ -1,7 +1,7 @@
  :root{
     --back--color: #202020;
     --back--header: #101010;
-    --color--cyan: #51EDFF;
+    --color--cyan: #1ed5e9;
     --font--white: rgb(243, 243, 243);
     --badge--gradiant: linear-gradient(#1E1E1E, #131313);
     --font--writting:'Permanent Marker', cursive;
@@ -18,28 +18,22 @@ h1{
     margin: 0;
 }
 main{
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
-
+    height: 100%;
 }
 .searched__content, .home__content {
     padding-top:27vh;
 }
 #app{
     height: 100vh;
-    width: 100%;
 }
 html{
     font-size: 62.5%;
-    width: 100%;
-
 }
 body{
     background-color: var(--back--color);
     color: var(--font--white);
-    width: 100%;
 
 }
 @media (min-width: 768px){ 

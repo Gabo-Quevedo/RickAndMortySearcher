@@ -9,13 +9,18 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname, 'src/index.js'),
+    app: path.resolve(__dirname, 'src/index.jsx'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].[hash].js',
-    publicPath: 'http://localhost:3001/',
+    publicPath: './',
     chunkFilename: 'js/[id].[chunkhash].js',
+  },
+  resolve: {
+    extensions: [
+      '.js', '.jsx',
+    ],
   },
   optimization: {
     minimizer: [
@@ -26,7 +31,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js|jsx$/,
         use: 'babel-loader',
         exclude: /node_modules/,
       },
@@ -66,7 +71,7 @@ module.exports = {
     new AddAssetHtmlPlugin({
       filepath: path.resolve(__dirname, 'dist/js/*.dll.js'),
       outputPath: 'js',
-      publicPath: 'http://localhost:3001/js',
+      publicPath: './js',
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ['**/app.*'],

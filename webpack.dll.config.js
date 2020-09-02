@@ -1,7 +1,7 @@
-const path = require('path')
-const webpack = require('webpack')
-const TersetJSPlugin = require('terser-webpack-plugin')
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const path = require('path');
+const webpack = require('webpack');
+const TersetJSPlugin = require('terser-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -9,13 +9,13 @@ module.exports = {
       'react',
       'react-dom',
       'react-router-dom',
-    ]
+    ],
   },
   optimization: {
     minimizer: [
       new TersetJSPlugin(),
-      new OptimizeCSSAssetsPlugin()
-    ]
+      new OptimizeCSSAssetsPlugin(),
+    ],
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -25,7 +25,7 @@ module.exports = {
   plugins: [
     new webpack.DllPlugin({
       name: '[name]',
-      path: path.join(__dirname, '[name]-manifest.json')
-    })
+      path: path.join(__dirname, '[name]-manifest.json'),
+    }),
   ],
-}
+};

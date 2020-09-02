@@ -1,5 +1,6 @@
 .details__content{
     width: 100%;
+    max-width: 768px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -75,7 +76,7 @@
         font-size: 14rem;
         display: inline-block;
         position: absolute;
-        width: 140vw;
+        width: 100vw;
         text-align: center;
         opacity: .6;
         color: var(--color--cyan);

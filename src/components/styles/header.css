@@ -17,7 +17,6 @@ header{
     
 }
 .header__container__picture{
-    width: 90%;
     display: flex;
     justify-content: center;
 }
@@ -27,7 +26,7 @@ header{
 }
 .form{
     width: 90%;
-    max-width: 40%;
+    max-width: 100%;
 }
 .form__label-searcher{
     font-size:2.0rem;
@@ -59,6 +58,10 @@ header{
 @media (min-width: 768px){ 
     .header__container {
         height:37vh;
+    }
+    .form{
+        max-width: 100%;
+        max-width: 700px;
     }
     
 .eyeRick{
