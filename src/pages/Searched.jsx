@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import SearchHeader from '../components/SearchHeader';
 
@@ -13,6 +14,7 @@ class Searched extends Component {
       nextPage: 1,
       loading: true,
       error: null,
+      scContent: false,
       data: {
         results: [],
       },
@@ -23,25 +25,68 @@ class Searched extends Component {
     this.fetchCharacters();
   }
 
+  componentDidUpdate(prevProps) {
+    const { match: { params: { filterWord } } } = this.props;
+    const { match: { params: { filterWord: prevFilterWord } } } = prevProps;
+    if (filterWord !== prevFilterWord) {
+      this.fetchCharacters();
+    }
+  }
+
   async fetchCharacters() {
     this.setState({ loading: true, error: null });
-    try {
-      const { nextPage, data } = this.state;
-      const response = await fetch(`https://rickandmortyapi.com/api/character?page=${nextPage}`);
-      const responseData = await response.json();
-      this.setState({
-        loading: false,
-        data: {
-          info: responseData.info,
-          results: [].concat(data.results, responseData.results),
-        },
-        nextPage: responseData.nextPage + 1,
-      });
-    } catch (error) {
-      this.setState({
-        loading: false,
-        error,
-      });
+    const { nextPage, data, scContent } = this.state;
+    const { match: { params: { filterWord } } } = this.props;
+    if (!filterWord) {
+      try {
+        const response = await fetch(`https://rickandmortyapi.com/api/character?page=${nextPage}`);
+        const responseData = await response.json();
+        if (scContent) {
+          this.setState({
+            loading: false,
+            data: {
+              info: responseData.info,
+              results: [].concat(data.results, responseData.results),
+            },
+            scContent: true,
+            nextPage: nextPage + 1,
+          });
+        } else {
+          this.setState({
+            loading: false,
+            data: {
+              info: responseData.info,
+              results: responseData.results,
+            },
+            scContent: true,
+            nextPage: nextPage + 1,
+          });
+        }
+      } catch (error) {
+        this.setState({
+          loading: false,
+          error,
+        });
+      }
+    } else {
+      try {
+        const response = await fetch(`https://rickandmortyapi.com/api/character/?name=${filterWord}`);
+        const responseData = await response.json();
+        this.setState({
+          loading: false,
+          data: {
+            info: responseData.info,
+            results: responseData.results,
+          },
+          scContent: false,
+          nextPage: 1,
+        });
+      } catch (error) {
+        this.setState({
+          loading: false,
+          error,
+        });
+      }
     }
   }
 
@@ -52,13 +97,17 @@ class Searched extends Component {
   }
 
   render() {
-    const { error, data, loading } = this.state;
+    const { match: { params: { filterWord } } } = this.props;
+
+    const {
+      error, data, loading,
+    } = this.state;
     if (error) {
       return `Error: ${error.message}`;
     }
     return (
       <>
-        <SearchHeader />
+        <SearchHeader filterWord={filterWord} />
         <section className="searched__content">
           {data.results.map((character) => (
             <div className="fillList" key={character.id}>
@@ -66,10 +115,16 @@ class Searched extends Component {
             </div>
           ))}
         </section>
-        { !loading
+        {!loading
           && (<NavFooter spaceMore={this.handleKeyPress} more={() => this.fetchCharacters()} />)}
       </>
     );
   }
 }
+Searched.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({ filterWord: PropTypes.string }),
+  }).isRequired,
+};
+
 export default Searched;

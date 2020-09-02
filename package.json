@@ -14,16 +14,17 @@
   "dependencies": {
     "bootstrap": "^4.5.1",
     "eslint-config-airbnb": "^18.2.0",
+    "history": "^5.0.0",
     "html-webpack-plugin": "^4.4.1",
-    "terser-webpack-plugin": "^4.0.0",
     "md5": "^2.2.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-router-dom": "^4.3.1",
-    "webpack": "^4.44.1",
-    "optimize-css-assets-webpack-plugin": "^5.0.3",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "terser-webpack-plugin": "^4.0.0",
+    "webpack": "^4.44.1"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",

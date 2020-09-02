@@ -66,7 +66,7 @@ export default class Details extends Component {
             <Attribute
               valueColor="attributeContainer__value blue-value"
               typeColor="attributeContainer__type blue-type"
-              contentValue={data.name || 'NONE'}
+              contentValue={data.species || 'NONE'}
               contentType="SPECIES"
             />
             <Attribute

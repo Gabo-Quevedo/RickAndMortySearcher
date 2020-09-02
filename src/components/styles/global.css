@@ -31,4 +31,5 @@ html{
 }
 body{
     background-color: var(--back--color);
+    color: var(--font--white);
 }

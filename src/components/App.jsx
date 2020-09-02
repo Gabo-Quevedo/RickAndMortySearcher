@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Router, Switch, Route } from 'react-router-dom';
+import history from '../utility/history';
 
 import Home from '../pages/Home';
 import Searched from '../pages/Searched';
@@ -8,15 +9,16 @@ import Layout from './Layout';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router history={history}>
       <Layout>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/searched" component={Searched} />
+          <Route exact path="/searched/:filterWord" component={Searched} />
+          <Route exact path="/searched/" component={Searched} />
           <Route exact path="/character/:charId" component={Details} />
         </Switch>
       </Layout>
-    </BrowserRouter>
+    </Router>
   );
 }
 
