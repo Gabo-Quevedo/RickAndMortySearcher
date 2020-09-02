@@ -53,16 +53,16 @@ export default class Details extends Component {
     return (
       <>
         <section className="details__content">
+          <div className="details__content-beName">{data.name}</div>
           <div className="charPicture">
-            <img src={data.image} alt="" />
-            <div className="charPicture__shadow" />
+            <img className="charPicture-img" src={data.image} alt="" />
+            <div className="charPicture-shadow" />
             <div className="charPicture-name">{data.name}</div>
             <div className="charPicture-origin">
               {`Origin-${data.origin.name}`}
             </div>
           </div>
-
-          <div className="AttributeContainer">
+          <div className="attributeContainer">
             <Attribute
               valueColor="attributeContainer__value blue-value"
               typeColor="attributeContainer__type blue-type"

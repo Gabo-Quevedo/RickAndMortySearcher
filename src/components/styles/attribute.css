@@ -1,17 +1,20 @@
 .attributeContainer{
-    height: 20vh;
-    background:red;
+    height: auto;
     display: flex;
     flex-direction: column;
+    width: 100%;
     min-width: 320px;
-    max-width: 425px;
+    padding-top: 37vh;
 }
 .attributeContainer__type{
-
     height: 4vh;
     height: 4vh;
 }
-
+.attributeComponent{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
 .attributeContainer__value,.attributeContainer__type{
     display: flex;
     justify-content: center;
@@ -56,4 +59,26 @@
 }
 .red-type{
     background: #7A1E1E;
+}
+@media (min-width: 425px){
+    .attributeContainer{
+        align-items: flex-start;
+        max-width: 425px;
+        width: 100%;
+    }
+    .attributeComponent{
+    width: 100%;
+    }
+}
+@media (min-width: 768px){ 
+    .attributeContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 768px;
+    }
+.attributeComponent{
+    max-width: 384px;
+    width: 100%;
+}
 }
