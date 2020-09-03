@@ -1,4 +1,4 @@
-.attributeContainer{
+.attributeContainer {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -6,79 +6,94 @@
     min-width: 320px;
     padding-top: 35vh;
 }
-.attributeContainer__type{
+
+.attributeContainer__type {
     height: 4vh;
     height: 4vh;
 }
-.attributeComponent{
+
+.attributeComponent {
     display: flex;
     flex-direction: column;
     height: auto;
 }
-.attributeContainer__value,.attributeContainer__type{
+
+.attributeContainer__value, .attributeContainer__type {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.attributeContainer__value{
 
+.attributeContainer__value {
     height: 16vh;
 }
-.attributeContainer__type-name{
+
+.attributeContainer__type-name {
     font-family: var(--font--writting);
     color: var(--font--white);
     font-size: 1.5rem;
     text-align: center;
 }
-.attributeContainer__value-name{
+
+.attributeContainer__value-name {
     font-family: var(--font--writting);
     color: var(--font--white);
-    font-size: 4.5rem;   
+    font-size: 4.5rem;
     text-align: center;
 }
-.blue-value{
-    background: linear-gradient(to bottom, rgb(33,110,141) 0%,rgb(23,92,119) 100%);
+
+.blue-value {
+    background: linear-gradient(to bottom, rgb(33, 110, 141) 0%, rgb(23, 92, 119) 100%);
 }
-.blue-type{
+
+.blue-type {
     background: #1E617A;
 }
-.green-value{
-    background: linear-gradient(to bottom, #349F42 0%,#177721 100%);
+
+.green-value {
+    background: linear-gradient(to bottom, #349F42 0%, #177721 100%);
 }
-.green-type{
+
+.green-type {
     background: #1E7A21;
 }
-.yellow-value{
-    background: linear-gradient(to bottom, #D1D622 0%,#7B812B 100%);
+
+.yellow-value {
+    background: linear-gradient(to bottom, #D1D622 0%, #7B812B 100%);
 }
-.yellow-type{
+
+.yellow-type {
     background: #7A771E;
 }
-.red-value{
-    background: linear-gradient(to bottom, #CC3939 0%,#771717 100%);
+
+.red-value {
+    background: linear-gradient(to bottom, #CC3939 0%, #771717 100%);
 }
-.red-type{
+
+.red-type {
     background: #7A1E1E;
 }
-@media (min-width: 425px){
-    .attributeContainer{
+
+@media (min-width: 425px) {
+    .attributeContainer {
         align-items: flex-start;
         max-width: 425px;
         width: 100%;
     }
-    .attributeComponent{
-    width: 100%;
+    .attributeComponent {
+        width: 100%;
     }
 }
-@media (min-width: 768px){ 
-    .attributeContainer{
+
+@media (min-width: 768px) {
+    .attributeContainer {
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        max-width:1024px;
+        max-width: 1024px;
     }
-.attributeComponent{
-    max-width: 50%;
-    width: 100%;
-}
+    .attributeComponent {
+        max-width: 50%;
+        width: 100%;
+    }
 }

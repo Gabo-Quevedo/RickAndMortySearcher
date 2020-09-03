@@ -5,6 +5,7 @@ import history from '../utility/history';
 import Home from '../pages/Home';
 import Searched from '../pages/Searched';
 import Details from '../pages/Details';
+import NotFound from './NotFound';
 import Layout from './Layout';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route exact path="/searched/:filterWord" component={Searched} />
           <Route exact path="/searched/" component={Searched} />
           <Route exact path="/character/:charId" component={Details} />
+          <Route path="*" component={NotFound} />
         </Switch>
       </Layout>
     </Router>
