@@ -53,6 +53,22 @@
     text-align: center;
 }
 
+
+@media (min-width: 425px) {
+    .charPicture-name {
+        font-size: 5rem;
+        opacity: .9;
+        bottom: 10%;
+    }
+    .charPicture-origin {
+        font-size: 1.8rem;
+        opacity: .9;
+        bottom: 5%;
+        top: auto;
+        width: 100%;
+    }
+}
+
 @media (min-width: 768px) {
     .details__content {
         max-width: 100%;
@@ -79,20 +95,5 @@
         bottom: 9%;
         left: auto;
         top: auto;
-    }
-}
-
-@media (min-width: 425px) {
-    .charPicture-name {
-        font-size: 5rem;
-        opacity: .9;
-        bottom: 10%;
-    }
-    .charPicture-origin {
-        font-size: 1.8rem;
-        opacity: .9;
-        bottom: 5%;
-        top: auto;
-        width: 100%;
     }
 }

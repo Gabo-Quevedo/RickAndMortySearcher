@@ -10,17 +10,17 @@ import Layout from './Layout';
 
 function App() {
   return (
-    <Router history={history}>
-      <Layout>
+    <Layout>
+      <Router history={history}>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/searched/:filterWord" component={Searched} />
           <Route exact path="/searched/" component={Searched} />
           <Route exact path="/character/:charId" component={Details} />
-          <Route path="*" component={NotFound} />
+          <Route exact path="*" component={NotFound} />
+          <Route exact path="/searched/:filterWord" component={Searched} />
         </Switch>
-      </Layout>
-    </Router>
+      </Router>
+    </Layout>
   );
 }
 

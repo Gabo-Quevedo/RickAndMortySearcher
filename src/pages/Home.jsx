@@ -5,8 +5,8 @@ import './styles/home.css';
 
 import rickMobile from '../images/rick.png';
 import bigRickMobile from '../images/rick@2x.png';
-import portal from '../images/portal.png';
-import bigPortal from '../images/portal@2x.png';
+import portal from '../images/Loader.svg';
+import bigPortal from '../images/Loader@2x.png';
 import WALA from '../images/WALA.png';
 import bigWALA from '../images/WALA@2x.png';
 

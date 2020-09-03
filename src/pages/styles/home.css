@@ -6,3 +6,76 @@
     justify-content: space-around;
     height: 100%;
 }
+
+.portal {
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    width: 30%;
+    bottom: 5%;
+    height: 30%;
+    position: relative;
+}
+
+.portal img {
+    position: absolute;
+    bottom: 10%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 320px) {
+    .portal img {
+        bottom: 10%;
+    }
+}
+
+@media (min-width: 360px) {
+    .portal img {
+        bottom: 13%;
+    }
+}
+
+@media (min-width: 375px) {
+    .portal img {
+        bottom: 20%;
+    }
+}
+
+@media (min-width: 411px) {
+    .portal img {
+        bottom: 16%;
+    }
+}
+
+@media (min-width: 768px) {
+        .portal img {
+        bottom: -0%;
+    }
+    .portal{
+        width: 20%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .eyeRick {
+        width: 60%;
+    }
+
+    .portal img{
+        bottom: 13%;
+    }
+    
+    .portal{
+        width: 20%;
+    }
+
+}
