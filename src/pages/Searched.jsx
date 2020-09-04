@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import SearchHeader from '../components/SearchHeader';
+import history from '../utility/history';
 
 import CharBadge from '../components/CharBadge';
 import NavFooter from '../components/NavFooter';
@@ -72,6 +73,9 @@ class Searched extends Component {
       try {
         const response = await fetch(`https://rickandmortyapi.com/api/character/?name=${filterWord}`);
         const responseData = await response.json();
+        if (!responseData.results) {
+          throw new Error();
+        }
         this.setState({
           loading: false,
           data: {
@@ -82,10 +86,7 @@ class Searched extends Component {
           nextPage: 1,
         });
       } catch (error) {
-        this.setState({
-          loading: false,
-          error,
-        });
+        history.push('/NotFound');
       }
     }
   }
@@ -102,6 +103,9 @@ class Searched extends Component {
     const {
       error, data, loading,
     } = this.state;
+    if (!data.results) {
+      return null;
+    }
     if (error) {
       return `Error: ${error.message}`;
     }

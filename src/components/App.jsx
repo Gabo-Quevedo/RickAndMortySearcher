@@ -16,8 +16,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/searched/" component={Searched} />
           <Route exact path="/character/:charId" component={Details} />
-          <Route exact path="*" component={NotFound} />
           <Route exact path="/searched/:filterWord" component={Searched} />
+          <Route path="*" component={NotFound} />
         </Switch>
       </Router>
     </Layout>

@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PNF from '../images/404.png';
+import Volver from '../images/Volver.png';
 
 import './styles/notFound.css';
 
@@ -14,6 +16,9 @@ function NotFound() {
           <img src={PNF} alt="404 Error" />
         </picture>
         <div className="notFoundContainer__picture-footer">Page Not Found</div>
+        <Link to="/">
+          <img src={Volver} alt="Voton Atras" />
+        </Link>
       </div>
     </>
   );
