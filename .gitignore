@@ -11,6 +11,10 @@
 # production
 /build
 
+#Dist
+/dist
+/src/images
+
 # images
 /src/components/images
 

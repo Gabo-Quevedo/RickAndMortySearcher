@@ -110,7 +110,7 @@ class Searched extends Component {
       return `Error: ${error.message}`;
     }
     return (
-      <>
+      <main className="mainSearched">
         <SearchHeader filterWord={filterWord} />
         <section className="searched__content">
           {data.results.map((character) => (
@@ -121,7 +121,7 @@ class Searched extends Component {
         </section>
         {!loading
           && (<NavFooter spaceMore={this.handleKeyPress} more={() => this.fetchCharacters()} />)}
-      </>
+      </main>
     );
   }
 }

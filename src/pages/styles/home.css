@@ -1,3 +1,6 @@
+.mainHome{
+    height: 100%;
+}
 .home__content {
     height: 73vh;
     display: flex;

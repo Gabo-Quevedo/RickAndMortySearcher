@@ -51,7 +51,7 @@ export default class Details extends Component {
       return `Error: ${error.message}`;
     }
     return (
-      <>
+      <main className="mainDetails">
         <section className="details__content">
           <div className="charPicture">
             <img className="charPicture-img" src={data.image} alt="" />
@@ -88,8 +88,7 @@ export default class Details extends Component {
             />
           </div>
         </section>
-
-      </>
+      </main>
     );
   }
 }

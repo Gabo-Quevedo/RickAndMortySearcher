@@ -1,3 +1,7 @@
+.mainDetails{
+    height: auto;
+}
+
 .details__content {
     width: 100%;
     max-width: 768px;

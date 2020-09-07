@@ -12,7 +12,7 @@ import bigWALA from '../images/WALA@2x.png';
 
 function Home() {
   return (
-    <>
+    <main className="mainHome">
       <SearchHeader />
       <section className="home__content">
         <picture className="eyeRick">
@@ -28,7 +28,7 @@ function Home() {
           <img src={portal} alt="Logo Rick and Morty API Searcher" />
         </picture>
       </section>
-    </>
+    </main>
   );
 }
 
